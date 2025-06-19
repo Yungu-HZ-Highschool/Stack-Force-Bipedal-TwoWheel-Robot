@@ -9,7 +9,7 @@ motorsparam motorsParam;
 
 float roll_kp = 0.0020, roll_kd = -0.006;  //机器人自稳Kp、Kd值 - 增强高机身稳定性
 
-float leftY = 120, rightY = 150;  //机器人Y轴方向腿部高度
+float leftY = 140, rightY = 180;  //机器人Y轴方向腿部高度
 float leftX = 60, rightX = 60;    //机器人X轴方向腿部高度
 float x1 = leftX, x2 = rightX, Y1 = leftY, y2 = rightY;
 float motorLeftFront, motorLeftRear, motorRightFront, motorRightRear;
@@ -181,11 +181,11 @@ void inverseKinematics()
 
   // 定义坐标原点alphaRight
   // 加1.57*8betaRight 
-  motorRightRear = (2.48 + 1.57 * 8) - (IKParam.betaRight * 8);
-  motorRightFront = (1.07 + 1.57 * 8) - (IKParam.alphaRight * 8);  // alphaLeft
+  motorRightRear = (2.33 + 1.57 * 8) - (IKParam.betaRight * 8);
+  motorRightFront = (0.65 + 1.57 * 8) - (IKParam.alphaRight * 8);  // alphaLeft
   
-  motorLeftRear = (1.27 + 1.57 * 8) - (IKParam.betaLeft * 8);
-  motorLeftFront = (0.96 + 1.57 * 8) - (IKParam.alphaLeft * 8);
+  motorLeftRear = (1.55 + 1.57 * 8) - (IKParam.betaLeft * 8);
+  motorLeftFront = (1.45 + 1.57 * 8) - (IKParam.alphaLeft * 8);
 }
 
 

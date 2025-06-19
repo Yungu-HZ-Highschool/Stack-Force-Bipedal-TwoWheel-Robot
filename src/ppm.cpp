@@ -41,7 +41,7 @@ void remote_switch()
     EH_rollflag = 1;
     up_start = 1;
   }
-  else if (ppmValues[7] < 1700 && ppmValues[7] > 1300)//机器人轮毂电机启动和机器人关闭自稳定
+  else if (ppmValues[7] > 1300)//机器人轮毂电机启动和机器人关闭自稳定
   {
     EH_rollflag = 0;
     up_start = 1;

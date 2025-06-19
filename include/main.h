@@ -13,3 +13,4 @@
 #include "robot.h"
 #include "can.h"
 #include "pid.h"
+#include "debug.h"
